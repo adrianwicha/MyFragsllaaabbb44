@@ -121,6 +121,7 @@ public class MainActivity extends FragmentActivity implements Fragment1.OnButton
             if (f instanceof Fragment1) continue;
             transaction.show(f);
         }
+
         transaction.addToBackStack(null);
         transaction.commit();
         hiden = false;
